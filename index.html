@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body><br /> <br /> 
+	 <form action="">
+	 <input id="textc" type="Text" value="Your Text Here" />
+	 </form><button onclick="copyt();">Copy Text</button>
+	 
+	 <script type="text/javascript"> 
+	 function copyt(){
+	 var text = document.getElementById('textc');	              	 
+	 text.select();
+     text.setSelectionRange(0, 99999)
+     document.execCommand("copy");
+	 }
+	 </script>
+</body>
+</html>
